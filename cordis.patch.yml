@@ -1,0 +1,6 @@
+# dsh-ssh-file-manager: one Host row that serves the remote file-manager routes
+# (/x-ssh-files/*) for the sidebar panel rendered by the Client half.
+- insert:
+    - id: ssh-file-manager
+      name: 'dsh-ssh-file-manager'
+      config: {}

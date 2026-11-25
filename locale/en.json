@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "SSH remote files",
+    "description": "Adds an “SSH remote files” panel to the sidebar that browses and manages a remote SSH host: directory tree, text/image/PDF preview, multi-select, copy, cut, paste, move, rename, delete, upload and download. Requires the dsh-ssh-toolkit plugin and a host configured under Settings → SSH connections."
+  }
+}

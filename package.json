@@ -1,0 +1,43 @@
+{
+  "name": "dsh-ssh-file-manager",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Remote file manager panel for DeepSeek Harness SSH workspaces: browse, preview, copy, move, rename, delete, upload and download files on the server.",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "dsh-ssh-toolkit": ">=1.4.0"
+  },
+  "peerDependenciesMeta": {
+    "dsh-ssh-toolkit": {
+      "optional": true
+    }
+  }
+}
